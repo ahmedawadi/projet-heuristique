@@ -1,6 +1,6 @@
 import numpy as np
 
-beta = 10**20
+beta = 10**15
 
 
 def MKP1(x):

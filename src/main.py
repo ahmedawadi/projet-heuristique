@@ -4,7 +4,7 @@ from algorithms.hybrid_ga_pso import run_hybrid_ga_pso_executions
 
 C1 = [0.5, 0.4]  # bga1 c1=0.5 c2 = 0.4 bga2 c1=1.5 c2=1.4
 C2 = [1.5, 1.5]
-execution_type = 3
+execution_type = 1
 
 
 if __name__ == "__main__":

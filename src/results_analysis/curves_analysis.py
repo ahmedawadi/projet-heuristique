@@ -24,6 +24,7 @@ file_paths = [
     "src/results/bpso2-results/mkp",
     "src/results/bga1-results/mkp",
     "src/results/bga2-results/mkp",
+    "src/results/ameliored-genetic-results/mkp",
 ]  # List of 10 file paths
 
 all_averages = []  # List to store the averages for all files

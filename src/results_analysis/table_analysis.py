@@ -21,16 +21,16 @@ def process_file(file_path):
 
 # Main script to process all files
 file_paths = [
-    "src/results/bga2-results/mkp1.txt",
-    "src/results/bga2-results/mkp2.txt",
-    "src/results/bga2-results/mkp3.txt",
-    "src/results/bga2-results/mkp4.txt",
-    "src/results/bga2-results/mkp5.txt",
-    "src/results/bga2-results/mkp6.txt",
-    "src/results/bga2-results/mkp7.txt",
-    "src/results/bga2-results/mkp8.txt",
-    "src/results/bga2-results/mkp9.txt",
-    "src/results/bga2-results/mkp10.txt",
+    "src/results/ameliored-genetic-results/mkp1.txt",
+    "src/results/ameliored-genetic-results/mkp2.txt",
+    "src/results/ameliored-genetic-results/mkp3.txt",
+    "src/results/ameliored-genetic-results/mkp4.txt",
+    "src/results/ameliored-genetic-results/mkp5.txt",
+    "src/results/ameliored-genetic-results/mkp6.txt",
+    "src/results/ameliored-genetic-results/mkp7.txt",
+    "src/results/ameliored-genetic-results/mkp8.txt",
+    "src/results/ameliored-genetic-results/mkp9.txt",
+    "src/results/ameliored-genetic-results/mkp10.txt",
 ]  # List of 10 file paths
 
 files_last_iterations = [process_file(file_paths[0])]
@@ -51,7 +51,7 @@ file_path_excel = "src/results/methods-results.xlsx"
 df = pd.read_excel(file_path_excel)
 
 # Write results into the "BPSO1-RESULTS" column for MKP1 to MKP10
-df.loc[:9, "GA2"] = results  # First 10 rows correspond to MKP1 to MKP10
+df.loc[:9, "MA1"] = results  # First 10 rows correspond to MKP1 to MKP10
 
 # Save the updated Excel file
 updated_file_path = "src/results/methods-results.xlsx"

@@ -2,7 +2,7 @@ from objective_functionnalities.mkp_functionnalities import get_function
 import numpy as np
 
 # Algorithm parameters
-MAX_ITER = 1000  # 1Nombre maximum d'itérations
+MAX_ITER = 1020  # 1Nombre maximum d'itérations
 PAS = 20
 
 
@@ -34,7 +34,7 @@ def genetic_algorithm(N, D, D1, f, i, result_folder_path, Delta):
         parents = combined_population[best_indices]
         fitnesses = combined_fitnesses[best_indices]
 
-        if t % PAS == 0:
+        if t % PAS == 0 and t != 0:
             with open(result_file_path, "+a") as writer:
                 writer.write(f"{(fitnesses[0])};")
                 writer.close()

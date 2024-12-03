@@ -16,5 +16,5 @@ if __name__ == "__main__":
         # run_pso_algorithm_executions(C2, "src/results/bpso2-results")
         run_genetic_algorithm_executions(0.05, "src/results/bga2-results")
 
-    else:
-        run_hybrid_ga_pso_executions("src/results/hybrid-ga-pso-results")
+    # else:
+    #     run_hybrid_ga_pso_executions("src/results/hybrid-ga-pso-results")

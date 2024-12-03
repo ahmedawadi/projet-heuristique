@@ -19,16 +19,16 @@ def process_high_values(input_file, output_file):
 
 
 files = [
-    "src/results/bpso2-results/mkp1.txt",
-    "src/results/bpso2-results/mkp2.txt",
-    "src/results/bpso2-results/mkp3.txt",
-    "src/results/bpso2-results/mkp4.txt",
-    "src/results/bpso2-results/mkp5.txt",
-    "src/results/bpso2-results/mkp6.txt",
-    "src/results/bpso2-results/mkp7.txt",
-    "src/results/bpso2-results/mkp8.txt",
-    "src/results/bpso2-results/mkp9.txt",
-    "src/results/bpso2-results/mkp10.txt",
+    "src/results/bga2-results/mkp1.txt",
+    "src/results/bga2-results/mkp2.txt",
+    "src/results/bga2-results/mkp3.txt",
+    "src/results/bga2-results/mkp4.txt",
+    "src/results/bga2-results/mkp5.txt",
+    "src/results/bga2-results/mkp6.txt",
+    "src/results/bga2-results/mkp7.txt",
+    "src/results/bga2-results/mkp8.txt",
+    "src/results/bga2-results/mkp9.txt",
+    "src/results/bga2-results/mkp10.txt",
 ]
 
 for file in files:

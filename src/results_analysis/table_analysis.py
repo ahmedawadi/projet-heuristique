@@ -21,16 +21,16 @@ def process_file(file_path):
 
 # Main script to process all files
 file_paths = [
-    "src/results/bpso2-results/mkp1.txt",
-    "src/results/bpso2-results/mkp2.txt",
-    "src/results/bpso2-results/mkp3.txt",
-    "src/results/bpso2-results/mkp4.txt",
-    "src/results/bpso2-results/mkp5.txt",
-    "src/results/bpso2-results/mkp6.txt",
-    "src/results/bpso2-results/mkp7.txt",
-    "src/results/bpso2-results/mkp8.txt",
-    "src/results/bpso2-results/mkp9.txt",
-    "src/results/bpso2-results/mkp10.txt",
+    "src/results/hybrid-ga-pso-results/mkp1.txt",
+    "src/results/hybrid-ga-pso-results/mkp2.txt",
+    "src/results/hybrid-ga-pso-results/mkp3.txt",
+    "src/results/hybrid-ga-pso-results/mkp4.txt",
+    "src/results/hybrid-ga-pso-results/mkp5.txt",
+    "src/results/hybrid-ga-pso-results/mkp6.txt",
+    "src/results/hybrid-ga-pso-results/mkp7.txt",
+    "src/results/hybrid-ga-pso-results/mkp8.txt",
+    "src/results/hybrid-ga-pso-results/mkp9.txt",
+    "src/results/hybrid-ga-pso-results/mkp10.txt",
 ]  # List of 10 file paths
 
 files_last_iterations = [process_file(file_paths[0])]
@@ -50,8 +50,8 @@ for file_path in file_paths:
 file_path_excel = "src/results/methods-results.xlsx"
 df = pd.read_excel(file_path_excel)
 
-# Write results into the "BPSO2" column for MKP1 to MKP10
-df.loc[:9, "BPSO2"] = results  # First 10 rows correspond to MKP1 to MKP10
+# Write results into the "HYBRID-GA-PSO-RESULTS" column for MKP1 to MKP10
+df.loc[:9, "HYBRID-BSO-GA2"] = results  # First 10 rows correspond to MKP1 to MKP10
 
 # Save the updated Excel file
 updated_file_path = "src/results/methods-results.xlsx"

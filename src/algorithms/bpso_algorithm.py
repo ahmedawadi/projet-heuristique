@@ -8,7 +8,6 @@ D = 28
 S = [0, 6]
 pas = 20
 
-
 # Facteur de pénalisation
 beta = 10**20
 
@@ -71,7 +70,7 @@ def best_postions(T, N, D, S, c1, c2, f, i, result_folder_path):
 
 
 def run_pso_algorithm_executions(C, result_folder_path):
-    for i in range(1, 11):
+    for i in range(10, 11):
         if i < 7:
             for j in range(0, 30):
                 best_postions(
